@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Analytics from "./components/Analytics";
 import NewsLetter from "./components/NewsLetter";
+import Packages from "./components/Packages";
 function App() {
   return (
     <>
@@ -9,6 +10,7 @@ function App() {
       <Hero/>
       <Analytics/>
       <NewsLetter/>
+      <Packages/>
     </>
   );
 }
