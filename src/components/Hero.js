@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
-import VD from "../Assets/VD.mp4";
+
 import { useRef, useEffect,useCallback } from "react";
 const Hero = () => {
     const videoRef = useRef();
@@ -27,7 +27,7 @@ const Hero = () => {
     <div className="text-white mt-20">
       <div className="absolute inset-0">
         <video ref={videoRef} autoPlay muted preload="auto" className=" w-full h-full object-cover">
-          <source src={VD} type="video/mp4" />
+          <source type="video/mp4" />
         </video>
       </div>
       <div className="flex relative flex-col text-center max-w-[800px] w-full mx-auto justify-center">
