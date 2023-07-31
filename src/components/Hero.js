@@ -1,33 +1,39 @@
 import React from "react";
 import Typed from "react-typed";
-import DataVD from '../Assets/DataVD.mp4'
-import { useRef, useEffect,useCallback } from "react";
+import DataVD from "../Assets/DataVD.mp4";
+import { useRef, useEffect, useCallback } from "react";
 const Hero = () => {
-    const videoRef = useRef();
+  const videoRef = useRef();
 
-    const handleVideoEnded = useCallback(() => {
-      const video = videoRef.current;
-      if (video) {
-        video.currentTime = 0;
-        video.play();
-      }
-    }, []);
-  
-    useEffect(() => {
-      const video = videoRef.current;
-      if (video) {
-        video.addEventListener('ended', handleVideoEnded);
-  
-        return () => {
-          video.removeEventListener('ended', handleVideoEnded);
-        };
-      }
-    }, [handleVideoEnded]);
+  const handleVideoEnded = useCallback(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.currentTime = 0;
+      video.play();
+    }
+  }, []);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.addEventListener("ended", handleVideoEnded);
+
+      return () => {
+        video.removeEventListener("ended", handleVideoEnded);
+      };
+    }
+  }, [handleVideoEnded]);
   return (
-    <div className="text-white mt-20">
+    <div className="text-white mt-[10rem] pb-[6rem] min-w-full">
       <div className="absolute inset-0">
-        <video ref={videoRef} autoPlay muted preload="auto" className="w-full h-full object-cover">
-          <source  src={DataVD} type="video/mp4" />
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          preload="auto"
+          className="w-full min-h-[750px] max-h-[780px] object-cover"
+        >
+          <source src={DataVD} type="video/mp4" />
         </video>
       </div>
       <div className="flex relative flex-col text-center max-w-[800px] w-full mx-auto justify-center">
@@ -62,4 +68,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
