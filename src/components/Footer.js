@@ -14,7 +14,7 @@ const Footer = () => {
           excepteur elit id. Id laboris mollit sunt eiusmod nisi sit ullamco
           voluptate magna eu nulla minim velit.
         </p>
-        <div className="flex md:w-[75%] justify-around my-6">
+        <div className="flex md:w-[70%] justify-between my-6">
           <FaFacebookSquare size={30} />
           <FaInstagram size={30} />
           <FaDribbbleSquare size={30} />
