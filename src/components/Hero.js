@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <div className="text-white mt-20">
       <div className="absolute inset-0">
-        <video ref={videoRef} autoPlay muted loop preload="auto" className="w-full h-full object-cover">
+        <video ref={videoRef} autoPlay muted preload="auto" className="w-full h-full object-cover">
           <source  src={DataVD} type="video/mp4" />
         </video>
       </div>
