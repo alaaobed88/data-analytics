@@ -19,10 +19,9 @@ const NewsLetter = () => {
     threshold: 0.2,
   });
   return (
-    <div className="w-full py-16 text-white">
+    <section className="w-full py-16 text-white">
       <AnimatePresence>
-      <div className="max-w-[1240px] mx-auto px-4 grid lg:grid-cols-3">
-        
+        <div className="max-w-[1240px] mx-auto px-4 grid lg:grid-cols-3">
           <div className="lg:col-span-2 my-4">
             <motion.div
               key="elm1"
@@ -47,7 +46,7 @@ const NewsLetter = () => {
               variants={secondSlideVariants}
               transition={{ duration: 2 }}
             >
-              <div className="flex flex-col sm:flex-row items-center justify-between w-full px-2">
+              <form className="flex flex-col sm:flex-row items-center justify-between w-full px-2">
                 <input
                   className="p-3 flex w-full rounded-md text-black"
                   type="email"
@@ -56,17 +55,18 @@ const NewsLetter = () => {
                 <button className="bg-[#00df9a] text-black rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3 hover:bg-black hover:text-[#00df9a] hover:scale-105 ease-in-out duration-500">
                   Sign Up
                 </button>
-              </div>
+              </form>
               <p className="mx-2">
-                We care about the protection of your data. Read our{" "}
-                <span className="text-[#00df9a] cursor-pointer hover:text-lg ease-in-out duration-200">Privacy Policy</span>
+                We care about the protection of your data. Read our
+                <span className="text-[#00df9a] cursor-pointer mx-1 hover:text-[1.1rem] ease-in-out duration-200">
+                  Privacy Policy
+                </span>
               </p>
             </motion.div>
           </div>
-        
-      </div>
+        </div>
       </AnimatePresence>
-    </div>
+    </section>
   );
 };
 

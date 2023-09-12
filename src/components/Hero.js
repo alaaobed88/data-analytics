@@ -24,7 +24,7 @@ const Hero = () => {
     }
   }, [handleVideoEnded]);
   return (
-    <div className="text-white mt-[10rem] pb-[6rem] min-w-full">
+    <section className="text-white mt-[10rem] pb-[6rem] min-w-full">
       <div className="absolute inset-0">
         <video
           ref={videoRef}
@@ -63,7 +63,7 @@ const Hero = () => {
           Get Started
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
