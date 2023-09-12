@@ -20,8 +20,8 @@ const Footer = () => {
     threshold: 0.2,
   });
   return (
-    <AnimatePresence>
-      <footer className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
+    <footer className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
+      <AnimatePresence>
         <div>
           <motion.div
             key="element1"
@@ -40,18 +40,30 @@ const Footer = () => {
               sit ullamco voluptate magna eu nulla minim velit.
             </p>
             <nav className="flex md:w-[70%] justify-between my-6">
-              <FaFacebookSquare
-                className="cursor-pointer hover:text-[#00df9a] hover:scale-105 hover:-rotate-45 ease-in-out duration-300"
-                size={30}
-              />
-              <FaInstagram
-                className="cursor-pointer hover:text-[#00df9a] hover:scale-105 hover:-rotate-45 ease-in-out duration-300"
-                size={30}
-              />
-              <FaDribbbleSquare
-                className="cursor-pointer hover:text-[#00df9a] hover:scale-105 hover:-rotate-45 ease-in-out duration-300"
-                size={30}
-              />
+              <button>
+                <FaFacebookSquare
+                  className="cursor-pointer hover:text-[#00df9a] hover:scale-105 hover:-rotate-45 ease-in-out duration-300"
+                  size={30}
+                  alt="facebook direction link"
+                  aria-label="go to facebook"
+                />
+              </button>
+              <button>
+                <FaInstagram
+                  className="cursor-pointer hover:text-[#00df9a] hover:scale-105 hover:-rotate-45 ease-in-out duration-300"
+                  size={30}
+                  alt="instagram direction link"
+                  aria-label="go to instagram"
+                />
+              </button>
+              <button>
+                <FaDribbbleSquare
+                  className="cursor-pointer hover:text-[#00df9a] hover:scale-105 hover:-rotate-45 ease-in-out duration-300"
+                  size={30}
+                  alt="drible direction link"
+                  aria-label="go to dribbble"
+                />
+              </button>
             </nav>
           </motion.div>
         </div>
@@ -69,16 +81,16 @@ const Footer = () => {
               <nav>
                 <ul>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Analytics
+                   <button>Analytics</button> 
                   </li>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Marketing
+                  <button>Marketing</button>
                   </li>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Commerce
+                  <button>Commerce</button> 
                   </li>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Insights
+                  <button>Insights</button>
                   </li>
                 </ul>
               </nav>
@@ -97,16 +109,16 @@ const Footer = () => {
               <nav>
                 <ul>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Pricing
+                  <button>Pricing</button> 
                   </li>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Documentations
+                  <button>Documentations</button> 
                   </li>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Guides
+                  <button>Guides</button> 
                   </li>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Api Status
+                  <button>Api Status</button> 
                   </li>
                 </ul>
               </nav>
@@ -125,16 +137,16 @@ const Footer = () => {
               <nav>
                 <ul>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    About
+                  <button>About</button>
                   </li>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Blog
+                  <button>Blog</button>  
                   </li>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Jobs
+                  <button>Jobs</button> 
                   </li>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Press
+                  <button>Press</button> 
                   </li>
                 </ul>
               </nav>
@@ -153,21 +165,21 @@ const Footer = () => {
               <nav>
                 <ul>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Claim
+                  <button>Claim</button>
                   </li>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Policy
+                  <button>Policy</button>
                   </li>
                   <li className="py-2 text-sm cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6">
-                    Terms
+                  <button>Terms</button>
                   </li>
                 </ul>
               </nav>
             </motion.div>
           </div>
         </div>
-      </footer>
-    </AnimatePresence>
+      </AnimatePresence>
+    </footer>
   );
 };
 

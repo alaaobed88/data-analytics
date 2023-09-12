@@ -13,30 +13,32 @@ const Navbar = () => {
       <nav className="hidden md:flex md:z-10">
         <ul className="hidden md:flex md:z-10">
           <li className="p-4 mx-1 cursor-pointer border-b hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6 ">
-            Home
+            <button>Home</button>
           </li>
           <li className="p-4 cursor-pointer border-b hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6 ">
-            Company
+           <button>Company</button> 
           </li>
           <li className="p-4 cursor-pointer border-b hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6 ">
-            Resources
+            <button>Resources</button>
           </li>
           <li className="p-4 cursor-pointer border-b hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6 ">
-            About
+           <button>About</button>
           </li>
           <li className="p-4 cursor-pointer border-b hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6 ">
-            Contact
+          <button>Contact</button>
           </li>
         </ul>
       </nav>
       <button onClick={navToggle} className="md:hidden z-10">
         {isNav ? (
           <AiOutlineMenu
+            aria-label="open navigation menu"
             size={20}
             className="cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6"
           />
         ) : (
           <AiOutlineClose
+            aria-label="close navigation menu"
             size={20}
             className="cursor-pointer hover:text-[#00df9a] hover:scale-105 ease-in-out duration-300 hover:rotate-6"
           />

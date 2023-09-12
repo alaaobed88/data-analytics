@@ -27,6 +27,7 @@ const Hero = () => {
     <section className="text-white mt-[10rem] pb-[6rem] min-w-full">
       <div className="absolute inset-0">
         <video
+          alt="data flow video"
           ref={videoRef}
           autoPlay
           muted

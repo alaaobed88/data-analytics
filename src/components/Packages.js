@@ -41,6 +41,7 @@ const Packages = () => {
                 className="w-20 mx-auto mt-[-3rem] bg-white"
                 src={Single}
                 alt="single-package"
+                aria-hidden="true"
               />
               <h2 className="text-2xl font-bold text-center py-8">
                 Single User
@@ -69,6 +70,7 @@ const Packages = () => {
                 className="w-20 mx-auto mt-[-3rem] bg-transparent"
                 src={Double}
                 alt="single-package"
+                aria-hidden="true"
               />
               <h2 className="text-2xl font-bold text-center py-8">
                 Partnership
@@ -97,6 +99,7 @@ const Packages = () => {
                 className="w-20 mx-auto mt-[-3rem] bg-white"
                 src={Triple}
                 alt="single-package"
+                aria-hidden="true"
               />
               <h2 className="text-2xl font-bold text-center py-8">
                 Group Account

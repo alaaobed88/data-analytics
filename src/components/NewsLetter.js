@@ -51,6 +51,7 @@ const NewsLetter = () => {
                   className="p-3 flex w-full rounded-md text-black"
                   type="email"
                   placeholder="Enter Email"
+                  
                 ></input>
                 <button className="bg-[#00df9a] text-black rounded-md font-medium w-[200px] ml-4 my-6 px-6 py-3 hover:bg-black hover:text-[#00df9a] hover:scale-105 ease-in-out duration-500">
                   Sign Up
